@@ -1,0 +1,3 @@
+@keyframes humanoid {
+  0%, 100% { transform: translate(3px, -26px) rotate(17deg); }
+}
