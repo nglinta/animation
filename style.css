@@ -63,7 +63,7 @@
   border-radius: 60px 79px 68px 70px / 35px 90px 134px 163px;
 }
 
-.humanoid::after {
+/* .humanoid::after {
   top: -98px;
   left: 0;
   width: 100%;
@@ -71,7 +71,7 @@
   background: #fff;
   border-radius: 74% 5% 50% 29% / 106% 43% 28% 0%;
   transform: rotate(279deg);
-}
+} */
 
 /* Body -end- */
 
@@ -146,7 +146,72 @@
   background: linear-gradient(to left top, #c0e9fa, #b7dde7);
 }
 
-.humanoid__wrist_left {
+/* Hand left -end- */
+
+/* Hand right -start- */
+
+.humanoid__shoulder_right {
+  top: 27px;
+  left: 19px;
+  width: 12px;
+  height: 135px;
+  background: #6f7173;
+  border-radius: 99em;
+  transform-origin: top center;
+  transform: rotate(-59deg);
+  z-index: -1;
+}
+
+.humanoid__shoulder_right::before {
+  top: 27px;
+  left: -16px;
+  width: 42px;
+  height: 84px;
+  border-radius: 10px 37px 36px 18px;
+  background: linear-gradient(to left bottom, #dbf4fc, #becee3);
+}
+
+.humanoid__shoulder_right::after {
+  top: -18px;
+  left: -13px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transform-origin: 20px 20px;
+  background: radial-gradient(#ebf4fb 43%, #626465 43%, #626465 53%, transparent 0%), radial-gradient(#ebf4fb 70%, transparent 0%);
+}
+
+.humanoid__arm_right {
+  top: 124px;
+  left: 0px;
+  width: 12px;
+  height: 124px;
+  background: #6f7173;
+  border-radius: 99em;
+  transform-origin: 6px 6px;
+  transform: rotate(-109deg);
+}
+
+.humanoid__arm_right::before {
+  top: 24px;
+  left: -11px;
+  width: 36px;
+  height: 79px;
+  border-radius: 10px 22px 27px 11px;
+  background: linear-gradient(to left top, #dbf4fc, #becee3);
+}
+
+.humanoid__arm_right::after {
+  top: -6px;
+  left: -6px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  transform-origin: 20px 20px;
+  background: radial-gradient(#ebf4fb 42%, #626465 42%, #626465 53%, transparent 0%), radial-gradient(#ebf4fb 100%, transparent 0%);
+}
+
+.humanoid__wrist_right {
   top: 107px;
   left: -11px;
   width: 36px;
@@ -155,7 +220,7 @@
   background: linear-gradient(to left top, #c0e9fa, #b7dde7);
 }
 
-/* Hand left -end- */
+/* Hand right -end- */
 
 /* Leg left -start-  */
 
@@ -225,3 +290,107 @@
 /* Leg left -end-  */
 
 /* Leg right -start-  */
+
+.humanoid__leg_right {
+  top: 179px;
+  left: 54px;
+  width: 20px;
+  height: 210px;
+  background: #5f6061;
+  border-radius: 99em;
+  transform-origin: 10px 10px;
+  transform: rotate(-78deg);
+  z-index: -1;
+}
+
+.humanoid__leg_right::before {
+  top: 47px;
+  left: -26px;
+  width: 68px;
+  height: 128px;
+  border-radius: 21px 33px 12px 25px / 15px 31px 12px 53px;
+  transform: rotate(2deg);
+  background: radial-gradient(farthest-side at 58% 80%, #fff 6%, transparent 0%), radial-gradient(closest-side at 75% 79%, #fff 18%, transparent 0%), radial-gradient(closest-side at 75% 63%, #fff 18%, transparent 0%), linear-gradient(to bottom left, #bde6f4, #a2c1c4);
+}
+
+.humanoid__leg_right::after {
+  top: 183px;
+  left: -7px;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  transform-origin: 20px 20px;
+  background: radial-gradient(#ebf4fb 37%, #626465 37%, #626465 47%, transparent 0%), radial-gradient(#ebf4fb 100%, transparent 0%);
+}
+
+.humanoid__shin_right {
+  top: 191px;
+  left: 0;
+  width: 18px;
+  height: 189px;
+  background: #5f6061;
+  border-radius: 99em;
+  transform-origin: 10px 10px;
+  transform: rotate(39deg);
+}
+
+.humanoid__shin_right::before {
+  top: 33px;
+  left: -13px;
+  width: 51px;
+  height: 122px;
+  border-radius: 27px 17px 27px 29px / 27px 27px 129px;
+  background: radial-gradient(circle at 67% 14%, #fff 6%, transparent 0%), radial-gradient(circle at 65% 30%, #fff 5%, transparent 0%), linear-gradient(to left top, #a3c2c5, #bfe7f5);
+}
+
+.humanoid__foot_right {
+  top: 170px;
+  left: -1px;
+  width: 82px;
+  height: 24px;
+  border-radius: 49% 90% 5% 44%;
+  transform-origin: left center;
+  transform: rotate(-14deg);
+  background: radial-gradient(circle at 11% 56%, #fff 6%, transparent 0%), radial-gradient(circle at 64% 58%, #fff 18%, transparent 0%), linear-gradient(to left top, #dbf4fc, #becee3);
+}
+
+/* Leg right -end-  */
+
+/* Head -start- */
+
+.humanoid__head {
+  top: -81px;
+  left: 14px;
+  width: 90px;
+  height: 125px;
+  transform-origin: bottom left;
+  transform: rotate(6deg );
+}
+
+.humanoid__head::before {
+  top: 56px;
+  left: 14px;
+  width: 58px;
+  height: 67px;
+  background: #696b6d;
+  clip-path: polygon(14% 0, 75% 7%, 70% 40%, 74% 67%, 88% 94%, 62% 82%, 35% 64%, 15% 50%, 17% 48%, 20% 23%);
+  transform-origin: bottom left;
+  transform: rotate(-3deg);
+  z-index: 1;
+}
+
+.humanoid__helmet {
+  top: 3px;
+  left: 2px;
+  width: 84px;
+  height: 67px;
+  background: linear-gradient();
+  background: #d3e6fa;
+  border-radius: 49% 83% 36% 68% / 61% 85% 57% 60%;
+  transform-origin: center;
+  transform: rotate(22deg);
+  z-index: 1;
+}
+
+
+/* Head -end- */
