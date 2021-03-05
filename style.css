@@ -5,18 +5,22 @@
 
 .frame {
   width: 800px;
-  height: 600px;
+  height: 645px;
   position: relative;
 }
 
-.frame *, .frame *::before, .frame *::after {
+.frame *,
+.frame *::before,
+.frame *::after {
   position: absolute;
-  content: '';
+  content: "";
 }
 
 /* Шаблон */
 
-.frame *, .frame *::before, .frame *::after {
+.frame *,
+.frame *::before,
+.frame *::after {
   top: 0;
   left: 0;
   width: 20px;
@@ -24,8 +28,200 @@
   background: linear-gradient();
   background: red;
   border-radius: 0px 0px 0px 0px;
-  transform-origin: top center;
-  transform: rotate(20deg);
+  transform-origin: center;
+  transform: rotate(0deg);
 }
 
 /* Шаблон */
+
+.floor {
+  top: auto;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #edfafd;
+}
+
+/* Body -start- */
+
+.humanoid {
+  top: 132px;
+  left: 443px;
+  width: 131px;
+  height: 214px;
+  transform-origin: bottom center;
+  transform: rotate(10deg);
+}
+
+.humanoid::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right bottom, #c4f1f5, #a1c0c3);
+  border-radius: 60px 79px 68px 70px / 35px 90px 134px 163px;
+}
+
+.humanoid::after {
+  top: -98px;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background: #fff;
+  border-radius: 74% 5% 50% 29% / 106% 43% 28% 0%;
+  transform: rotate(279deg);
+}
+
+/* Body -end- */
+
+/* Hand left -start- */
+
+.humanoid__shoulder_left {
+  top: 27px;
+  left: 19px;
+  width: 12px;
+  height: 135px;
+  background: #6f7173;
+  border-radius: 99em;
+  transform-origin: top center;
+  transform: rotate(50deg);
+}
+
+.humanoid__shoulder_left::before {
+  top: 27px;
+  left: -16px;
+  width: 42px;
+  height: 84px;
+  border-radius: 10px 37px 36px 18px;
+  background: linear-gradient(to left bottom, #dbf4fc, #becee3);
+}
+
+.humanoid__shoulder_left::after {
+  top: -18px;
+  left: -13px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transform-origin: 20px 20px;
+  background: radial-gradient(#ebf4fb 43%, #626465 43%, #626465 53%, transparent 0%), radial-gradient(#ebf4fb 70%, transparent 0%);
+}
+
+.humanoid__arm_left {
+  top: 124px;
+  left: 0px;
+  width: 12px;
+  height: 124px;
+  background: #6f7173;
+  border-radius: 99em;
+  transform-origin: 6px 6px;
+  transform: rotate(-107deg);
+}
+
+.humanoid__arm_left::before {
+  top: 24px;
+  left: -11px;
+  width: 36px;
+  height: 79px;
+  border-radius: 10px 22px 27px 11px;
+  background: radial-gradient(circle at 27% 81%, #fff 6%, transparent 0%), radial-gradient(circle at 28% 67%, #fff 5%, transparent 0%), linear-gradient(to left top, #dbf4fc, #becee3);
+}
+
+.humanoid__arm_left::after {
+  top: -6px;
+  left: -6px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  transform-origin: 20px 20px;
+  background: radial-gradient(#ebf4fb 42%, #626465 42%, #626465 53%, transparent 0%), radial-gradient(#ebf4fb 100%, transparent 0%);
+}
+
+.humanoid__wrist_left {
+  top: 107px;
+  left: -11px;
+  width: 36px;
+  height: 35px;
+  clip-path: polygon(60% 0, 71% -4%, 93% 24%, 103% 57%, 84% 93%, 55% 102%, 20% 96%, 2% 78%, 9% 21%, 21% 11%);
+  background: linear-gradient(to left top, #c0e9fa, #b7dde7);
+}
+
+.humanoid__wrist_left {
+  top: 107px;
+  left: -11px;
+  width: 36px;
+  height: 35px;
+  clip-path: polygon(60% 0, 71% -4%, 93% 24%, 103% 57%, 84% 93%, 55% 102%, 20% 96%, 2% 78%, 9% 21%, 21% 11%);
+  background: linear-gradient(to left top, #c0e9fa, #b7dde7);
+}
+
+/* Hand left -end- */
+
+/* Leg left -start-  */
+
+.humanoid__leg_left {
+  top: 179px;
+  left: 54px;
+  width: 20px;
+  height: 210px;
+  background: #5f6061;
+  border-radius: 99em;
+  transform-origin: 10px 10px;
+  transform: rotate(33deg);
+  z-index: -1;
+}
+
+.humanoid__leg_left::before {
+  top: 47px;
+  left: -26px;
+  width: 68px;
+  height: 128px;
+  border-radius: 21px 33px 12px 25px / 15px 31px 12px 53px;
+  transform: rotate(2deg);
+  background: linear-gradient(to bottom left, #bde6f4, #a2c1c4);
+}
+
+.humanoid__leg_left::after {
+  top: 183px;
+  left: -7px;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  transform-origin: 20px 20px;
+  background: radial-gradient(#ebf4fb 37%, #626465 37%, #626465 47%, transparent 0%), radial-gradient(#ebf4fb 100%, transparent 0%);
+}
+
+.humanoid__shin_left {
+  top: 191px;
+  left: 0;
+  width: 18px;
+  height: 189px;
+  background: #5f6061;
+  border-radius: 99em;
+  transform-origin: 10px 10px;
+  transform: rotate(38deg);
+}
+
+.humanoid__shin_left::before {
+  top: 33px;
+  left: -13px;
+  width: 51px;
+  height: 122px;
+  border-radius: 27px 17px 27px 29px / 27px 27px 129px;
+  background: radial-gradient(9% 111%, #fff 15%, transparent 0%), linear-gradient(to left top, #a3c2c5, #bfe7f5);
+}
+
+.humanoid__foot_left {
+  top: 170px;
+  left: -1px;
+  width: 82px;
+  height: 24px;
+  border-radius: 49% 90% 5% 44%;
+  transform-origin: left center;
+  transform: rotate(-4deg);
+  background: radial-gradient(circle at 11% 56%, #fff 6%, transparent 0%), radial-gradient(circle at 64% 58%, #fff 18%, transparent 0%), linear-gradient(to left top, #dbf4fc, #becee3);
+}
+
+/* Leg left -end-  */
+
+/* Leg right -start-  */
