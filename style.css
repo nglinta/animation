@@ -7,6 +7,7 @@
   width: 800px;
   height: 645px;
   position: relative;
+  --animation: 1s ease infinite;
 }
 
 .frame *,
@@ -18,7 +19,7 @@
 
 /* Шаблон */
 
-.frame *,
+/* .frame *,
 .frame *::before,
 .frame *::after {
   top: 0;
@@ -30,7 +31,7 @@
   border-radius: 0px 0px 0px 0px;
   transform-origin: center;
   transform: rotate(0deg);
-}
+} */
 
 /* Шаблон */
 
@@ -52,6 +53,7 @@
   height: 214px;
   transform-origin: bottom center;
   transform: rotate(10deg);
+  animation: humanoid var(--animation);
 }
 
 .humanoid::before {
@@ -279,12 +281,23 @@
 .humanoid__foot_left {
   top: 170px;
   left: -1px;
-  width: 82px;
+  width: 61px;
   height: 24px;
-  border-radius: 49% 90% 5% 44%;
+  border-radius: 49% 59% 32% 44%;
   transform-origin: left center;
   transform: rotate(-4deg);
-  background: radial-gradient(circle at 11% 56%, #fff 6%, transparent 0%), radial-gradient(circle at 64% 58%, #fff 18%, transparent 0%), linear-gradient(to left top, #dbf4fc, #becee3);
+  background: radial-gradient(circle at 11% 56%, #fff 6%, transparent 0%), radial-gradient(circle at 84% 58%, #fff 15%, transparent 0%), linear-gradient(to left top, #dbf4fc, #becee3);
+}
+
+.humanoid__foot_left::after {
+  top: 3px;
+  left: 41px;
+  width: 40px;
+  height: 21px;
+  border-radius: 35% 100% 35% 24% / 62% 95% 13% 75%;
+  transform-origin: 10px 10px;
+  transform: rotate(0deg );
+  background: radial-gradient(circle at 34% 51%, #fff 38%, transparent 0%), linear-gradient(to left top, #c6d8ea, #d4ebf6);
 }
 
 /* Leg left -end-  */
@@ -346,12 +359,23 @@
 .humanoid__foot_right {
   top: 170px;
   left: -1px;
-  width: 82px;
+  width: 61px;
   height: 24px;
-  border-radius: 49% 90% 5% 44%;
+  border-radius: 49% 59% 32% 44%;
   transform-origin: left center;
-  transform: rotate(-14deg);
-  background: radial-gradient(circle at 11% 56%, #fff 6%, transparent 0%), radial-gradient(circle at 64% 58%, #fff 18%, transparent 0%), linear-gradient(to left top, #dbf4fc, #becee3);
+  transform: rotate(-4deg);
+  background: radial-gradient(circle at 11% 56%, #fff 6%, transparent 0%), radial-gradient(circle at 84% 58%, #fff 15%, transparent 0%), linear-gradient(to left top, #dbf4fc, #becee3);
+}
+
+.humanoid__foot_right::after {
+  top: 3px;
+  left: 41px;
+  width: 40px;
+  height: 21px;
+  border-radius: 35% 100% 35% 24% / 62% 95% 13% 75%;
+  transform-origin: 10px 10px;
+  transform: rotate(0deg );
+  background: radial-gradient(circle at 34% 51%, #fff 38%, transparent 0%), linear-gradient(to left top, #c6d8ea, #d4ebf6);
 }
 
 /* Leg right -end-  */
@@ -382,15 +406,44 @@
 .humanoid__helmet {
   top: 3px;
   left: 2px;
-  width: 84px;
-  height: 67px;
-  background: linear-gradient();
-  background: #d3e6fa;
-  border-radius: 49% 83% 36% 68% / 61% 85% 57% 60%;
+  width: 78px;
+  height: 64px;
+  background: linear-gradient(to bottom right, #bed8e5, #c2dbe9);
+  border-radius: 50% 50% 45% 50% / 60% 63% 40% 40%;
   transform-origin: center;
-  transform: rotate(22deg);
+  transform: rotate(7deg);
   z-index: 1;
 }
 
+.humanoid__helmet::before {
+  top: 32px;
+  left: 43px;
+  width: 47px;
+  height: 39px;
+  background: linear-gradient(to bottom right, #bed8e5, #c2dbe9);
+  border-radius: 4px 9px 23px 18px;
+  transform: rotate(65deg);
+}
+
+.humanoid__helmet::after {
+  top: 0px;
+  left: 50px;
+  width: 13px;
+  height: 20px;
+  background: #f3cacf;
+  border-radius: 5px 0px 0px 0px;
+  transform-origin: bottom left;
+  transform: rotate(62deg);
+}
+
+.humanoid__visor {
+  top: 15px;
+  left: 20px;
+  width: 39px;
+  height: 39px;
+  background: radial-gradient(circle at 50% 50%, #f8e2e5 21%, transparent 0%), radial-gradient(circle at 50% 50%, #faeced 40%, transparent 0%), linear-gradient(to left top, #fcf7f8, #fcf8fa);
+  border-radius: 50%;
+  z-index: 1;
+}
 
 /* Head -end- */
