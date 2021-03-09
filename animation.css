@@ -1,3 +1,205 @@
+/* Body */
+
 @keyframes humanoid {
-  0%, 100% { transform: rotate(0deg); }
+  0%, 100% {transform: translate(0px, 11px) rotate(10deg)}
+  10% {transform: translate(0px, 0px) rotate(9deg)}
+  20% {transform: translate(0px, 0px) rotate(10deg)}
+  30% {transform: translate(-2px, 11px) rotate(13deg)}
+  40% {transform: translate(-11px, 64px) rotate(18deg)}
+  50% {transform: translate(-9px, 22px) rotate(16deg)}
+  60% {transform: translate(0px, 4px) rotate(11deg)}
+  70% {transform: translate(1px, 0px) rotate(9deg)}
+  80% {transform: translate(-9px, 9px) rotate(14deg)}
+  90% {transform: translate(-6px, 60px) rotate(14deg)}
+}
+
+/* Head */
+
+@keyframes humanoidHead {
+  0%, 100% {transform: rotate(6deg)}
+  10% {transform: rotate(3deg)}
+  20% {transform: rotate(0deg)}
+  30%, 80% {transform: rotate(7deg)}
+  40%, 90% {transform: rotate(10deg)}
+  50% {transform: rotate(8deg)}
+  60% {transform: rotate(3deg)}
+  70% {transform: rotate(1deg)}
+}
+
+@keyframes humanoidHelmet {
+  0%, 100% {transform: rotate(14deg)}
+  10% {transform: rotate(13deg)}
+  20% {transform: rotate(12deg)}
+  30% {transform: rotate(14deg)}
+  40% {transform: rotate(17deg)}
+  50% {transform: rotate(19deg)}
+  60% {transform: rotate(16deg)}
+  70% {transform: rotate(12deg)}
+  80% {transform: rotate(8deg)}
+  90% {transform: rotate(5deg)}
+}
+
+@keyframes humanoidVisorSight {
+  0%, 100% {transform: rotate(73deg); background: #f3cfd3}
+  10% {transform: rotate(73deg); background: #f2c9ce}
+  20% {transform: rotate(73deg); background: #f6d8dc}
+  30%, 80% {transform: rotate(73deg); background: #fff}
+  40%, 90% {transform: rotate(73deg); background: #faeced}
+  50% {transform: rotate(73deg); background: #efbbc1}
+  60%, 70% {transform: rotate(73deg); background: #ed9da6}
+}
+
+@keyframes humanoidVisorCircle {
+  0%, 100% {background: radial-gradient(circle at 50% 50%, #f3cfd3 40%, transparent 0%), radial-gradient(circle at 50% 50%, #f6dcdf 60%, transparent 0%), linear-gradient(to left top, #fcf7f8, #fcf8fa)}
+  10% {background: radial-gradient(circle at 50% 50%, #f2c9ce 35%, transparent 0%), radial-gradient(circle at 50% 50%, #faeced 60%, transparent 0%), linear-gradient(to left top, #fcf7f8, #fcf8fa)}
+  20% {background: radial-gradient(circle at 50% 50%, #f8e2e5 33%, transparent 0%), radial-gradient(circle at 50% 50%, #faeced 60%, transparent 0%), linear-gradient(to left top, #fcf7f8, #fcf8fa)}
+  30%, 80% {background: radial-gradient(circle at 50% 50%, #f8e2e5 2%, transparent 0%), radial-gradient(circle at 50% 50%, #faf1f2 60%, transparent 0%), linear-gradient(to left top, #fcf7f8, #fcf8fa)}
+  40%, 90% {background: radial-gradient(circle at 50% 50%, #f8e2e5 2%, transparent 0%), radial-gradient(circle at 50% 50%, #faf1f2 60%, transparent 0%), linear-gradient(to left top, #fcf7f8, #fcf8fa)}
+  50% {background: radial-gradient(circle at 50% 50%, #f8e2e5 5%, transparent 0%), radial-gradient(circle at 50% 50%, #faeced 40%, transparent 0%), linear-gradient(to left top, #fcf7f8, #fcf8fa)}
+  60%, 70% {background: radial-gradient(circle at 50% 50%, #f8e2e5 21%, transparent 0%), radial-gradient(circle at 50% 50%, #faeced 40%, transparent 0%), linear-gradient(to left top, #fcf7f8, #fcf8fa)}
+}
+
+/* Hand left */
+
+@keyframes humanoidShoulderLeft {
+  0%, 100% {transform: rotate(7deg)}
+  10% {transform: rotate(-37deg)}
+  20% {transform: rotate(-57deg)}
+  30% {transform: rotate(-59deg)}
+  40% {transform: rotate(-20deg)}
+  50% {transform: rotate(18deg)}
+  60% {transform: rotate(34deg)}
+  70% {transform: rotate(46deg)}
+  80% {transform: rotate(49deg)}
+  90% {transform: rotate(36deg)}
+}
+
+@keyframes humanoidArmLeft {
+  0%, 100% {transform: rotate(-94deg)}
+  10% {transform: rotate(-103deg)}
+  20% {transform: rotate(-108deg)}
+  30% {transform: rotate(-101deg)}
+  40%, 90% {transform: rotate(-90deg)}
+  50% {transform: rotate(-93deg)}
+  60% {transform: rotate(-99deg)}
+  70% {transform: rotate(-107deg)}
+  80% {transform: rotate(-102deg)}
+}
+
+/* Hand right  */
+
+@keyframes humanoidShoulderRight {
+  0%, 100% {transform: rotate(25deg)}
+  10% {transform: rotate(43deg)}
+  20% {transform: rotate(48deg)}
+  30% {transform: rotate(50deg)}
+  40% {transform: rotate(27deg)}
+  50% {transform: rotate(-3deg)}
+  60% {transform: rotate(-23deg)}
+  70% {transform: rotate(-52deg)}
+  80% {transform: rotate(-59deg)}
+  90% {transform: rotate(-5deg)}
+}
+
+@keyframes humanoidArmRight {
+  0%, 100% {transform: rotate(-92deg)}
+  10% {transform: rotate(-105deg)}
+  20% {transform: rotate(-107deg)}
+  30% {transform: rotate(-103deg)}
+  40% {transform: rotate(-90deg)}
+  50% {transform: rotate(-95deg)}
+  60% {transform: rotate(-101deg)}
+  70% {transform: rotate(-105deg)}
+  80% {transform: rotate(-108deg)}
+  90% {transform: rotate(-88deg)}
+}
+
+/* Leg left */
+
+@keyframes humanoidLegLeft {
+  0%, 100% {transform: rotate(-11deg)}
+  10% {transform: rotate(-78deg)}
+  20% {transform: rotate(-80deg)}
+  30% {transform: rotate(-55deg)}
+  40% {transform: rotate(-74deg)}
+  50% {transform: rotate(-42deg)}
+  60% {transform: rotate(-19deg)}
+  70% {transform: rotate(34deg)}
+  80% {transform: rotate(24deg)}
+  90% {transform: rotate(27deg)}
+}
+
+@keyframes humanoidShinLeft {
+  0%, 100% {transform: rotate(127deg)}
+  10% {transform: rotate(86deg)}
+  20% {transform: rotate(46deg)}
+  30% {transform: rotate(-1deg)}
+  40% {transform: rotate(60deg)}
+  50% {transform: rotate(57deg)}
+  60% {transform: rotate(51deg)}
+  70% {transform: rotate(2deg)}
+  80% {transform: rotate(69deg)}
+  90% {transform: rotate(100deg)}
+}
+
+@keyframes humanoidFootLeft {
+  0%, 100% {transform: rotate(14deg)}
+  10%, 80% {transform: rotate(5deg)}
+  20% {transform: rotate(-20deg)}
+  30% {transform: rotate(24deg)}
+  40% {transform: rotate(-6deg)}
+  50% {transform: rotate(-32deg)}
+  60% {transform: rotate(-20deg)}
+  70% {transform: rotate(-4deg)}
+  90% {transform: rotate(4deg)}
+}
+
+@keyframes humanoidToeLeft {
+  0%, 10%, 20%, 30%, 40%, 50%, 70%, 80%, 90%, 100% {transform: rotate(0deg)}
+  60% {transform: rotate(-18deg)}
+}
+
+/* Leg right */
+
+@keyframes humanoidLegRight {
+  0%, 100% {transform: rotate(-23deg)}
+  10% {transform: rotate(11deg)}
+  20% {transform: rotate(37deg)}
+  30% {transform: rotate(26deg)}
+  40% {transform: rotate(24deg)}
+  50% {transform: rotate(3deg)}
+  60% {transform: rotate(-50deg)}
+  70% {transform: rotate(-81deg)}
+  80% {transform: rotate(-56deg)}
+  90% {transform: rotate(-65deg)}
+}
+
+@keyframes humanoidShinRight {
+  0%, 100% {transform: rotate(47deg)}
+  10% {transform: rotate(22deg)}
+  20% {transform: rotate(15deg)}
+  30% {transform: rotate(69deg)}
+  40% {transform: rotate(98deg)}
+  50% {transform: rotate(119deg)}
+  60% {transform: rotate(129deg)}
+  70% {transform: rotate(62deg)}
+  80% {transform: rotate(0deg)}
+  90% {transform: rotate(72deg)}
+}
+
+@keyframes humanoidFootRight {
+  0%, 100% {transform: rotate(-34deg)}
+  10% {transform: rotate(0deg)}
+  20% {transform: rotate(-4deg)}
+  30% {transform: rotate(8deg)}
+  40% {transform: rotate(5deg)}
+  50%, 60% {transform: rotate(10deg)}
+  70% {transform: rotate(-4deg)}
+  80% {transform: rotate(21deg)}
+  90% {transform: rotate(-23deg)}
+}
+
+@keyframes humanoidToeRight {
+  0%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {transform: rotate(0deg)}
+  10% {transform: rotate(-40deg)}
 }
